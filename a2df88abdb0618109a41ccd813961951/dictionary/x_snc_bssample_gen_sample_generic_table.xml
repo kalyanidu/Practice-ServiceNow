@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Sample Generic Table" max_length="40" name="x_snc_bssample_gen_sample_generic_table" type="collection">
+    <element db_object_id="faf6e124c35fd210258ad4fc0501313e" label="NeedIt" max_length="40" name="x_snc_bssample_gen_sample_generic_table" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
+        <element label="Date and Time" max_length="40" name="date_and_time" type="calendar_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requested For" mandatory="true" max_length="40" name="requestedfor" type="string"/>
+        <element label="What Needed" max_length="50" name="what_needed" type="string"/>
     </element>
 </database>

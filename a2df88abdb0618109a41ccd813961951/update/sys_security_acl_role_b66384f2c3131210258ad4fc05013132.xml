@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-28 03:21:52</sys_created_on>
+        <sys_id>b66384f2c3131210258ad4fc05013132</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_bssample_gen_sample_generic_table.x_58872_needit.admin</sys_name>
+        <sys_package display_value="NeedIT" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIT">a2df88abdb0618109a41ccd813961951</sys_scope>
+        <sys_security_acl display_value="x_snc_bssample_gen_sample_generic_table">d7005cabdb0618109a41ccd8139619f2</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b66384f2c3131210258ad4fc05013132</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-28 03:21:52</sys_updated_on>
+        <sys_user_role display_value="x_58872_needit.admin" name="x_58872_needit.admin">cbb578edc3571210258ad4fc050131d9</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

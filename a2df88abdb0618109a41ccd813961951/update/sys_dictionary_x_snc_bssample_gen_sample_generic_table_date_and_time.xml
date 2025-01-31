@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Date and Time</column_label>
+        <column_label>Due Date</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -52,13 +52,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-22 09:15:32</sys_created_on>
-        <sys_name>Date and Time</sys_name>
-        <sys_package display_value="Sample Repo" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
+        <sys_name>Due Date</sys_name>
+        <sys_package display_value="NeedIT" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Sample Repo">a2df88abdb0618109a41ccd813961951</sys_scope>
+        <sys_scope display_value="NeedIT">a2df88abdb0618109a41ccd813961951</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_bssample_gen_sample_generic_table_date_and_time</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 09:15:32</sys_updated_on>
+        <sys_updated_on>2025-01-30 07:01:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

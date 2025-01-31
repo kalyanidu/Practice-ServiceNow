@@ -2,14 +2,13 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="name" table="x_snc_bssample_gen_sample_generic_table">
         <active>true</active>
         <array>false</array>
-        <array_denormalized>false</array_denormalized>
         <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
         <choice>0</choice>
         <choice_field/>
         <choice_table/>
-        <column_label>Name</column_label>
+        <column_label>Assigned To</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -25,6 +24,7 @@
         <element>name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
+        <formula/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
@@ -42,21 +42,18 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2020-07-22 15:24:01</sys_created_on>
-        <sys_id>3a005cabdb0618109a41ccd8139619b8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Name</sys_name>
-        <sys_package display_value="Sample Repo" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
+        <sys_name>Assigned To</sys_name>
+        <sys_package display_value="NeedIT" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Sample Repo">a2df88abdb0618109a41ccd813961951</sys_scope>
+        <sys_scope display_value="NeedIT">a2df88abdb0618109a41ccd813961951</sys_scope>
         <sys_update_name>sys_dictionary_x_snc_bssample_gen_sample_generic_table_name</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-07-22 15:24:01</sys_updated_on>
+        <sys_updated_on>2025-01-30 07:01:51</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -64,6 +61,7 @@
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>

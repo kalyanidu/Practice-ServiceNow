@@ -1,41 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="NeedIt">11209c6bdb0618109a41ccd813961964</application>
+        <application display_value="Special Occasions">1021782dc3571210258ad4fc05013170</application>
         <assessment/>
         <device_type/>
         <filter/>
         <hint/>
         <homepage/>
         <image/>
-        <link_type>SEPARATOR</link_type>
+        <link_type>DIRECT</link_type>
         <map_page/>
-        <mobile_title>Sample Generic Table</mobile_title>
+        <mobile_title>Properties</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
         <name/>
-        <order>1</order>
+        <order>900</order>
         <override_menu_roles>false</override_menu_roles>
-        <query/>
+        <query>system_properties_ui.do?sysparm_title=Special Days Application Properties&amp;sysparm_category=Special Days Properties</query>
         <report/>
-        <require_confirmation>false</require_confirmation>
-        <roles>admin</roles>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
         <sys_class_name>sys_app_module</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2020-07-22 15:24:27</sys_created_on>
+        <sys_created_on>2025-01-30 06:17:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>d520dcabdb0618109a41ccd813961911</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name> NeedIt Tasks</sys_name>
+        <sys_id>e38e365bc3db5210258ad4fc050131ce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Properties</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIT" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIT">a2df88abdb0618109a41ccd813961951</sys_scope>
-        <sys_update_name>sys_app_module_d520dcabdb0618109a41ccd813961911</sys_update_name>
+        <sys_update_name>sys_app_module_e38e365bc3db5210258ad4fc050131ce</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-30 06:58:22</sys_updated_on>
+        <sys_updated_on>2025-01-30 06:57:24</sys_updated_on>
         <timeline_page/>
-        <title> NeedIt Tasks</title>
+        <title>Properties</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

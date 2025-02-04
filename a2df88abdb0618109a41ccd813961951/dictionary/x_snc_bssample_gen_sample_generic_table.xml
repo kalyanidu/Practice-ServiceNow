@@ -5,6 +5,14 @@
         <element label="Due Date" max_length="40" name="date_and_time" type="calendar_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Assigned To" max_length="40" name="name" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Short description" mandatory="true" max_length="40" name="requestedfor" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="When needed" max_length="40" name="u_needed" type="string"/>
         <element label="What Needed" max_length="50" name="what_needed" type="string"/>
+        <index name="index">
+            <element name="requestedfor"/>
+        </index>
+        <index name="index2">
+            <element name="what_needed"/>
+        </index>
     </element>
 </database>

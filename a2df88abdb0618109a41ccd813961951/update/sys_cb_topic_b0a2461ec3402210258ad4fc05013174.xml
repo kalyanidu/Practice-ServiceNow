@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description/>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.73",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "e43b78fd84e642b98c403991624ae849": {
+          "id": "e43b78fd84e642b98c403991624ae849",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "1b03d36ec45340bdb0514e322a1b2db1": {
+          "id": "1b03d36ec45340bdb0514e322a1b2db1",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "74c3cf0b4b7a4ad486b9fefa25d32510": {
+          "id": "74c3cf0b4b7a4ad486b9fefa25d32510",
+          "stepType": "TextOutput",
+          "name": "Limit Reached",
+          "secure": false,
+          "value": [
+            {
+              "value": "(function execute() {\n      // If Live Chat is available, inform users they will be transfered to a live agent\n      // otherwise, let them know how to work with more NeedIt records\n      if (vaSystem.isLiveAgentAvailable()){\n          return 'You have reached your NeedIt search limit. I will transfer you to a live agent for assistance.'\n      } else {\n          return 'You have reached your NeedIt search limit. If you need to work with multiple NeedIt records, open NeedIt &gt; My NeedIt Requests.'\n      }\n  })()",
+              "mode": "script"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        },
+        "8687e8fd79a74547a9c338a8b6c95d94": {
+          "id": "8687e8fd79a74547a9c338a8b6c95d94",
+          "name": "Transfer to Agent",
+          "script": "(function execute() {\n      // Transfer to a live agent\n      vaSystem.connectToAgent()\n  })()",
+          "stepType": "ScriptAction",
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "7069eadcec1b4f77b366b0f69b022fab",
+          "edgeType": "Edge",
+          "source": "e43b78fd84e642b98c403991624ae849",
+          "target": "74c3cf0b4b7a4ad486b9fefa25d32510",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "855e7e43708e468589d5d5c6bad1eed2",
+          "edgeType": "Edge",
+          "source": "74c3cf0b4b7a4ad486b9fefa25d32510",
+          "target": "8687e8fd79a74547a9c338a8b6c95d94",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "83173df7cb3448ffbdd26d1f7a7f2ac8",
+          "edgeType": "Edge",
+          "source": "8687e8fd79a74547a9c338a8b6c95d94",
+          "target": "1b03d36ec45340bdb0514e322a1b2db1",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases>Live Agent</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Live Agent</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-05 06:07:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b0a2461ec3402210258ad4fc05013174</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Live Agent</sys_name>
+        <sys_package display_value="NeedIT" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIT">a2df88abdb0618109a41ccd813961951</sys_scope>
+        <sys_update_name>sys_cb_topic_b0a2461ec3402210258ad4fc05013174</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-05 06:11:12</sys_updated_on>
+        <title>Live Agent</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=b0a2461ec3402210258ad4fc05013174"/>
+</record_update>

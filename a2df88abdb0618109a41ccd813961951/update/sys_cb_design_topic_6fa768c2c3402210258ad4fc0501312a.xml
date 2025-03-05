@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="NeedItVirtual Agent Conversations">93a768c2c3402210258ad4fc05013126</compiled_topic>
+        <design_definition>{"type":"FlowTopic","triggers":[{"type":"Trigger","name":"bf0ca039fadf42ada5cf74415b385fe8","triggerType":"request","applicability":{"type":"Applicability","mode":"script","value":"true"},"id":"bf0ca039fadf42ada5cf74415b385fe8"}],"goals":[{"name":"primary","trigger_id":"bf0ca039fadf42ada5cf74415b385fe8","nodes":[{"type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","mode":"string","value":""},"id":"f287cf519ae148a9b58f200896c04b03","name":"Start","expert_mode":false},{"type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","mode":"string","value":""},"id":"3cd4d6c4868d4015aed14d3257555c73","name":"End","expert_mode":false},{"type":"ChoiceInputPrompt","expression_mode":"simple","metadataScript":"","cardName":"","cardFields":[],"id":"b53804e77b7c4ca4b80cc207ff886a6a","name":"NeedIT Type","goal_id":"primary","applicability":{"type":"Applicability","mode":"script","value":"true"},"expert_mode":false,"variable_id":"0c55faca19f74403b334a321ae38e69a","message":{"type":"String","mode":"string","value":"gs.getMessageLang(\"Which type of NeedIt record would you like to view?\", vaContext.getRequesterLang())"},"request_feedback":false,"skippable":{"type":"Applicability","mode":"script","value":"false"},"skipreprompt":{"type":"Applicability","mode":"script","value":"false"},"nlu_entity_binding":{"type":"NLUEntityBinding","allow_text_input":false,"use_confirmation_prompt":true},"description":""}],"edges":[{"type":"Edge","source_node_id":"f287cf519ae148a9b58f200896c04b03","target_node_id":"b53804e77b7c4ca4b80cc207ff886a6a","id":"94ec7ea16c2d4d12b5e9148dd4782aab"},{"type":"Edge","source_node_id":"b53804e77b7c4ca4b80cc207ff886a6a","target_node_id":"3cd4d6c4868d4015aed14d3257555c73","id":"816d6f9c80ca4e56aafb78650766e629"}],"id":"primary"}],"script_variables":[],"glide_variables":[{"type":"Reference","table":"sys_user","auto_select":false,"id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false},{"type":"Choice","choices":[{"name":"Legal","element":"legal"},{"name":"Facilities","element":"facilities"},{"name":"Human Resources","element":"human resources"}],"id":"0c55faca19f74403b334a321ae38e69a","name":"needit_type","formatType":"text","secure":false,"sensitive":false,"aiInput":false,"list":false,"label":"NeedIT Type"}],"applicability":{"type":"Applicability","mode":"script","value":"true"},"roles":[],"scope":"a2df88abdb0618109a41ccd813961951","domain":"global","topic_type":"STANDARD","channels":[],"dialog_acts_enabled":false,"id":"1996ec42c3002210258ad4fc050131be","name":"NeedItVirtual Agent Conversations","key_phrases":["NeedItVirtual Agent Conversations"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":false,"autopilot_topic":false,"design_categories":[],"triggerable_by_notification":false,"description":"Testing","model_type":"nlu_keyword","foundational":false,"modify_confirmation_enabled":false,"context_profiles":[],"title":"NeedItVirtual Agent Conversations","library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>1996ec42c3002210258ad4fc050131be</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.73",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "f287cf519ae148a9b58f200896c04b03": {
+          "id": "f287cf519ae148a9b58f200896c04b03",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "3cd4d6c4868d4015aed14d3257555c73": {
+          "id": "3cd4d6c4868d4015aed14d3257555c73",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "b53804e77b7c4ca4b80cc207ff886a6a": {
+          "name": "NeedIT Type",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Which type of NeedIt record would you like to view?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "0c55faca19f74403b334a321ae38e69a",
+          "detailDescription": "",
+          "id": "b53804e77b7c4ca4b80cc207ff886a6a",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        }
+      },
+      "edges": [
+        {
+          "id": "94ec7ea16c2d4d12b5e9148dd4782aab",
+          "edgeType": "Edge",
+          "source": "f287cf519ae148a9b58f200896c04b03",
+          "target": "b53804e77b7c4ca4b80cc207ff886a6a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "816d6f9c80ca4e56aafb78650766e629",
+          "edgeType": "Edge",
+          "source": "b53804e77b7c4ca4b80cc207ff886a6a",
+          "target": "3cd4d6c4868d4015aed14d3257555c73",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "0c55faca19f74403b334a321ae38e69a": {
+      "id": "0c55faca19f74403b334a321ae38e69a",
+      "name": "needit_type",
+      "label": "NeedIT Type",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "Legal",
+          "value": "legal"
+        },
+        {
+          "label": "Facilities",
+          "value": "facilities"
+        },
+        {
+          "label": "Human Resources",
+          "value": "human resources",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "b53804e77b7c4ca4b80cc207ff886a6a",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <name>NeedItVirtual Agent Conversations</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-04 04:51:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6fa768c2c3402210258ad4fc0501312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIT" source="x_snc_bssample_gen">a2df88abdb0618109a41ccd813961951</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIT">a2df88abdb0618109a41ccd813961951</sys_scope>
+        <sys_update_name>sys_cb_design_topic_6fa768c2c3402210258ad4fc0501312a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-04 04:51:12</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

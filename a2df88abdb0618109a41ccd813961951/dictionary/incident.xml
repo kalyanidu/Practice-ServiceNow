@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element attributes="email_client=true,hasWorkflow=true,live_feed=true,all_tables.query_hints=true" audit="true" db_object_id="5e935fe8dc9212104f34465061b06ade" extends="task" label="Incident" max_length="40" name="incident" text_index="true" type="collection">
-        <element choice="1" display="true" label="Sub_State" max_length="40" name="x_snc_bssample_gen_sub_state" type="choice">
-            <choice>
-                <element inactive_on_update="false" label="Awaiting moderation" value="true"/>
-                <element inactive_on_update="false" label="Customer Action" value="true"/>
-            </choice>
-        </element>
         <element default="g_form.setValue('email',g_form.getValue('caller_id'))" label="Email" max_length="50" name="x_snc_bssample_gen_email" read_only="true" type="string"/>
     </element>
 </database>
